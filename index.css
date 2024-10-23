@@ -1,0 +1,64 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    background-color: blue;
+    transition-duration: 1000ms;
+    transition:1s
+    -o-transition-timing-function: cubic-bezier(0.47);
+}
+
+.box:hover{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    transform: rotate(360deg);
+}
+
+.box1{
+    width: 500px;
+    height: 150px;
+    border: 1px solid black
+}
+
+.box2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: red;
+    border: 2px solid red;
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes circle{
+    0%{
+       transform: translateX(0%);   
+    }
+    50%{
+      transform: translateX(220%);
+    }
+    100%{
+       transform: translateX(0%);
+    }
+}
+
+.box3{
+    border: 25px solid rgb(189, 192, 209);
+    border-radius: 100%;
+    border-right: 25px solid royalblue;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    animation-name: box3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box3{
+    to{
+        transform: rotate(1turn);
+    }
+}
